@@ -36,4 +36,9 @@ public class NotesController {
         return new ResponseEntity<>(noteService.getUserNotes(login), HttpStatus.OK);
     }
 
+    @GetMapping("getnote/{id}")
+    public ResponseEntity getNoteById(@PathVariable Long id){
+        return new ResponseEntity<>(noteService.getNote(id),HttpStatus.OK);
+    }
+
 }

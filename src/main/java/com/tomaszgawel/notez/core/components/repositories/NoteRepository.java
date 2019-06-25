@@ -10,4 +10,5 @@ import java.util.ArrayList;
 @Repository
 public interface NoteRepository extends CrudRepository<NoteEntity, Integer> {
     ArrayList<NoteEntity> getAllByUser(UserEntity user);
+    NoteEntity getById(Long id);
 }

@@ -30,7 +30,7 @@ public class NoteEntity {
     @Column(name = "modification_date")
     private Date modificationDate;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     UserEntity user;
 
 }

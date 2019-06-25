@@ -47,4 +47,8 @@ public class NoteService {
         return noteRepository.getAllByUser(user);
 
     }
+
+    public NoteEntity getNote(Long id){
+        return noteRepository.getById(id);
+    }
 }

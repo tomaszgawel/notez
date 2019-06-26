@@ -1,4 +1,4 @@
-package com.tomaszgawel.notez.core.components;
+package com.tomaszgawel.notez.core.components.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
